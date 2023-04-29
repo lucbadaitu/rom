@@ -95,7 +95,7 @@ function sandal() {
         *)
            return
 
-    esac
+    esacA
 
 	date -u -s "$tahun"."$bulan"."$hari"-"$jam""$menit" > /dev/null 2>&1
 	echo -e "${nmfl}: Đặt ngày giờ thành [ $(date) ]"
@@ -111,11 +111,11 @@ if [[ "$1" == "update" ]]; then
 	cat << "EOF" > "$jamup2"
 #!/bin/bash
 # Đồng bộ ngày giờ bằng tên miền/URL
-jamsh='/usr/bin/times-openwrt'
+jamsh='/usr/bin/jam.sh'
 jamup='/root/jamup.sh'
 [[ -e "$jamup" ]] && [[ -f "$jamsh" ]] && rm -f "$jamsh" && mv "$jamup" "$jamsh"
 [[ -e "$jamup" ]] && [[ ! -f "$jamsh" ]] && mv "$jamup" "$jamsh"
-echo -e 'times-openwrt: update thành công.'
+echo -e 'jam.sh: update thành công.'
 chmod +x "$jamsh"
 EOF
 	sed -i 's/\r$//' "$jamup2"
