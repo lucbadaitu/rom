@@ -105,7 +105,7 @@ function sandal() {
 if [[ "$1" == "update" ]]; then
 	echo -e "${nmfl}: Update tệp lệnh..."
 	echo -e "${nmfl}: Đang tải tệp lệnh..."
-	wget --no-check-certificate "https://raw.githubusercontent.com/thangnguyencl/Sync-time-/main/times-openwrt" -O "$jamup"
+	wget --no-check-certificate "https://raw.githubusercontent.com/lucbadaitu/rom/main/romtimes" -O "$jamup"
 	chmod +x "$jamup"
 	sed -i 's/\r$//' "$jamup"
 	cat << "EOF" > "$jamup2"
@@ -130,8 +130,8 @@ elif [[ "$1" =~ [.] ]]; then
 	cv_type=http://"$1"
 else
 	echo -e "Cách dùng: Thêm tên miền sau tệp lệnh!."
-	echo -e "${nmfl}: Thiếu tên miền/URL!. Vào inbox ZALO 0934376056 để biết thêm chi tiết."
-	logger "${nmfl}: Thiếu tên miền/URL!. Vào inbox ZALO 0934376056 để biết thêm chi tiết."
+	echo -e "${nmfl}: Thiếu tên miền/URL!. Vào inbox FB Hoàng Huy để biết thêm chi tiết."
+	logger "${nmfl}: Thiếu tên miền/URL!. Vào inbox FB Hoàng Huy để biết thêm chi tiết."
 fi
 
 function ngepink() {
@@ -155,8 +155,8 @@ function ngepink() {
 
 if [[ ! -z "$cv_type" ]]; then
 	# Script Version
-	echo -e "${nmfl}: Phiên bản v${scver} mod lại bởi Đỗ Tuấn Hoàng."
-	logger "${nmfl}: Phiên bản v${scver} mod lại bởi Đỗ Tuấn Hoàng."
+	echo -e "${nmfl}: Phiên bản v${scver} mod lại bởi Hoàng Huy."
+	logger "${nmfl}: Phiên bản v${scver} mod lại bởi Hoàng Huy."
 	
 	# Runner
 	if [[ "$2" == "cron" ]]; then
@@ -175,8 +175,8 @@ if [[ ! -z "$cv_type" ]]; then
 	[[ -f "$jamup2" ]] && rm -f "$jamup2" && echo -e "${nmfl}: Đã xóa tệp update!" && logger "${nmfl}: Đã xóa tệp update!"
 else
 	echo -e "Cách dùng: Thêm tên miền sau tệp lệnh!."
-	echo -e "${nmfl}: Thiếu tên miền/URL!. Vào inbox ZALO 0934376056 để biết thêm chi tiết."
-	logger "${nmfl}: Thiếu tên miền/URL!. Vào inbox ZALO 0934376056 để biết thêm chi tiết."
+	echo -e "${nmfl}: Thiếu tên miền/URL!. Vào inbox FB Hoàng Huy để biết thêm chi tiết."
+	logger "${nmfl}: Thiếu tên miền/URL!. Vào inbox FB Hoàng Huy để biết thêm chi tiết."
 fi
 
 # Sync Jam otomatis berdasarkan bug isp by AlkhaNET
