@@ -42,12 +42,12 @@ Dán lệnh bên dưới để cài đặt tập lệnh times-openwrt
 
 Dùng wget:
 ```
-wget --no-check-certificate "https://raw.githubusercontent.com/lucbadaitu/rom/main/romtimes" -O /usr/bin/times-openwrt && chmod +x /usr/bin/times.sh
+wget --no-check-certificate "https://raw.githubusercontent.com/lucbadaitu/rom/main/romtimes" -O /usr/bin/times-openwrt && chmod +x /usr/bin/times-openwrt
 ```
 
 dùng curl:
 ```
-curl -sL https://raw.githubusercontent.com/lucbadaitu/rom/main/romtimes > /usr/bin/times-openwrt && chmod +x /usr/bin/times.sh
+curl -sL https://raw.githubusercontent.com/lucbadaitu/rom/main/romtimes > /usr/bin/times-openwrt && chmod +x /usr/bin/times-openwrt
 ```
 
 Nhập lệnh bên dưới vào LuCI -> System -> Startup -> Local Startup hoặc tại rc.local nếu ở trong terminal
