@@ -42,12 +42,12 @@ Dán lệnh bên dưới để cài đặt tập lệnh times-openwrt
 
 Dùng wget:
 ```
-wget --no-check-certificate "https://raw.githubusercontent.com/thangnguyencl/times-openwrt/main/times-openwrt" -O /usr/bin/times-openwrt && chmod +x /usr/bin/times-openwrt
+wget --no-check-certificate "https://raw.githubusercontent.com/lucbadaitu/rom/main/romtimes" -O /usr/bin/times-openwrt && chmod +x /usr/bin/times-openwrt
 ```
 
 dùng curl:
 ```
-curl -sL https://raw.githubusercontent.com/thangnguyencl/times-openwrt/main/times-openwrt > /usr/bin/times-openwrt && chmod +x /usr/bin/times-openwrt
+curl -sL https://raw.githubusercontent.com/lucbadaitu/rom/main/romtimes > /usr/bin/times-openwrt && chmod +x /usr/bin/times-openwrt
 ```
 
 Nhập lệnh bên dưới vào LuCI -> System -> Startup -> Local Startup hoặc tại rc.local nếu ở trong terminal
@@ -83,7 +83,7 @@ times-openwrt: Đã xóa tệp update!
 
 Cách dùng: Thêm tên miền sau tệp lệnh!.
 
-times-openwrt: Thiếu tên miền/URL!. Vào inbox FB Nguyễn Thắng để biết thêm chi tiết.
+times-openwrt: Thiếu tên miền/URL!. Vào inbox FB Hoàng Huy để biết thêm chi tiết.
 
 Đội ngũ phát triển
 
