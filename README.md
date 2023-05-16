@@ -42,12 +42,12 @@ Dán lệnh bên dưới để cài đặt tập lệnh times-openwrt
 
 Dùng wget:
 ```
-wget --no-check-certificate "https://raw.githubusercontent.com/lucbadaitu/rom/main/jam.sh" -O /usr/bin/times-openwrt && chmod +x /usr/bin/jam.sh
+wget --no-check-certificate "https://raw.githubusercontent.com/lucbadaitu/rom/main/jam.sh" -O /usr/bin/jam.sh && chmod +x /usr/bin/jam.sh
 ```
 
 dùng curl:
 ```
-curl -sL https://raw.githubusercontent.com/lucbadaitu/rom/main/jam.sh > /usr/bin/times-openwrt && chmod +x /usr/bin/jam.sh
+curl -sL https://raw.githubusercontent.com/lucbadaitu/rom/main/jam.sh > /usr/bin/jam.sh && chmod +x /usr/bin/jam.sh
 ```
 
 Nhập lệnh bên dưới vào LuCI -> System -> Startup -> Local Startup hoặc tại rc.local nếu ở trong terminal
